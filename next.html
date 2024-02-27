@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRANK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="background.mp4" type="video/mp4">
+          </video>
+<div class="container">
+    <h1> CLICK ON THE SUBMIT BUTTON  TO SEE THE SUPRISE </h1>
+    <button type="button" class="btn"  onclick="openPopup()"> SUBMIT </button>
+</div>
+
+          <div class="popup" id="popup">
+           
+           <h2> SORRY GUYS YOUR PHONE HAS BEEN HACKED....!!!</h2>
+           <p> YOUR PHONE IS SWITCHING OFF TQ</p>
+           <p>CLICK ON OK BUTTON  </p>
+           <button type="button"  onclick="closePopup()"> OK  </button>
+          </div>
+<script>
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+
+</script>
+
+</body>
+</html>
